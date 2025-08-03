@@ -19,6 +19,12 @@ Route::get('course', function () {
     return Inertia::render('Course');
 })->middleware(['auth', 'verified'])->name('course');
 
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::get('courses', function () {
+        return Inertia::render('Courses');
+    })->name('courses');
+});
+
 
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';

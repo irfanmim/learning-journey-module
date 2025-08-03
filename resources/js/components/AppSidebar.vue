@@ -23,8 +23,8 @@ const mainNavItems: NavItem[] = [
         icon: NotebookText
     },
     {
-        title: 'Course',
-        href: '/course',
+        title: 'Courses',
+        href: '/courses',
         icon: NotebookText
     }
 ];

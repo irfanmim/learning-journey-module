@@ -6,6 +6,7 @@ import { Head } from '@inertiajs/vue3';
 import PlaceholderPattern from '../components/PlaceholderPattern.vue';
 import { Input, Textarea } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { Button } from '@/components/ui/button';
 // import InputError from '@/components/InputError.vue';
 
 const breadcrumbs: BreadcrumbItem[] = [
@@ -50,6 +51,9 @@ const form = useForm({
                 <div class="grid gap-2 mt-4">
                     <Label>Learning Materials</Label>
                     <Textarea id="learning-materials" type="textarea" placeholder="Learning Materials" />
+                </div>
+                <div class="text-right gap-2 mt-4">
+                    <Button>Submit</Button>
                 </div>
             </div>
         </div>
